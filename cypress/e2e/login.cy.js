@@ -5,13 +5,11 @@ describe('test logins', () => {
   })
 
    it('Should show correct display of the account', () => {
-     cy.viewport(550, 750);
      cy.login('bropet@mail.ru', '123');
      cy.contains('Добро пожаловать bropet@mail.ru').should('be.visible')
    })
 
     it('Should show correct display of the account ', () => {
-      cy.viewport("iphone-6");
       cy.login('bropet@mail.ru', '123');
       cy.contains('Добро пожаловать bropet@mail.ru').should('be.visible')
     })

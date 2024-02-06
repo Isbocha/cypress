@@ -1,16 +1,21 @@
 {
   "name": "cypress1",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:firefox": "cypress run --browser firefox"
+    "chrome:headed": "cypress run --browser chrome --headed --config-file cypress.config.js",
+    "chrome:headless": "cypress run --browser chrome --headless --config-file cypress.config.js",
+    "edge:headed": "cypress run --browser edge --headed --config-file cypress.config.js",
+    "edge:headless ": "cypress run --browser edge --headless --config-file cypress.config.js",
+    "phone:headed": "cypress run --browser chrome --headed --config-file cypress.config.phone.js",
+    "phone:headless ": "cypress run --browser chrome --headless --config-file cypress.config.phone.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.1"
-  }
+    "cypress": "^13.6.4"
+  },
+  "keywords": [],
+  "description": ""
 }
